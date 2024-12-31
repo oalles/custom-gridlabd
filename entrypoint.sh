@@ -36,7 +36,7 @@ if gridlabd \
     --redirect verbose:"$LOGS_DIR/verbose.log" \
     --redirect profile:"$LOGS_DIR/profile.log" \
     --redirect progress:"$LOGS_DIR/progress.log" \
-    "$MODEL_PATH" -o "$LOGS_DIR/results"; then
+    "$MODEL_PATH" -o "$LOGS_DIR/full_model.glm"; then
     log_event "simulation_ended - Simulation completed successfully"
 else
     log_event "simulation_failed - Simulation encountered an error"
